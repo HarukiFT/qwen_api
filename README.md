@@ -6,7 +6,7 @@ This project is a Node.js application built with NestJS that provides an API end
 
 ## Prerequisites
 
-Before you begin, ensure you have the following installed on your system:
+Before you begin, ensure you have the following installed on your system:  
 **Docker** : [Install Docker](https://docs.docker.com/get-docker/?spm=5aebb161.2f484c1b.0.0.7a037b95QWLwnO).  
 **Docker Compose** (optional): If you want to use docker-compose, install it from [here](https://docs.docker.com/compose/install/).
 

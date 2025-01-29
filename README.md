@@ -21,7 +21,30 @@ git clone https://github.com/your-repo-url.git
 cd your-repo-name
 ```
 
-### 2. Build and Run the Application
+### 2. Create credentials.json file in project dir
+
+**File with accounts credentials should be named as credentials.json and placed in project dir**
+**IT'S MUST HAVE**
+Example of `credentials.json` content:
+
+```json
+[
+  {
+    "login": "carolann90113@bfr4.terriblecoffee.org",
+    "password": "zd05455f9fb947a47d37c7853a511364486992625bad99x85fa4554b2472f81e"
+  },
+  {
+    "login": "proffitt21121@g696.undeadbank.com",
+    "password": "1d05455f9fb947a47d37c7853a511364486992625bad99z85fa4554b2472f81e"
+  },
+  {
+    "login": "aaronson36532@zrhwl.underseagolf.com",
+    "password": "7d05455f9fb947a47d37c7853a511364486992625bad99a85fa4554b2472f81e"
+  }
+]
+```
+
+### 3. Build and Run the Application
 
 **Using Docker**
 To build and run the application using Docker, follow these steps:

@@ -23,7 +23,7 @@ cd your-repo-name
 
 ### 2. Create `credentials.json` file in project dir
 
-**File with accounts credentials should be named as credentials.json and placed in project dir**
+**File with accounts credentials should be named as credentials.json and placed in project dir**  
 **IT'S MUST HAVE**
 Example of `credentials.json` content:
 
@@ -52,13 +52,13 @@ To build and run the application using Docker, follow these steps:
 ##### 1. Build the Docker Image:
 
 ```bash
-docker build -t nestjs-app .
+docker build -t qwen-api .
 ```
 
 ##### 2. Run the Docker Container:
 
 ```bash
-docker run -p 3000:3000 nestjs-app
+docker run -p 3000:3000 qwen-api
 ```
 
 This command maps port `3000` of the container to port `3000` on your host machine.

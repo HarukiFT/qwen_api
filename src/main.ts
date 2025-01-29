@@ -6,9 +6,9 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.useGlobalPipes(
     new ValidationPipe({
-      whitelist: true, // Удаляет лишние свойства из запроса
-      forbidNonWhitelisted: true, // Запрещает неопределенные свойства
-      transform: true, // Преобразует типы данных
+      whitelist: true,
+      forbidNonWhitelisted: true,
+      transform: true,
     }),
   );
   await app.listen(3000);

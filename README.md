@@ -21,7 +21,7 @@ git clone https://github.com/your-repo-url.git
 cd your-repo-name
 ```
 
-### 2. Create credentials.json file in project dir
+### 2. Create `credentials.json` file in project dir
 
 **File with accounts credentials should be named as credentials.json and placed in project dir**
 **IT'S MUST HAVE**

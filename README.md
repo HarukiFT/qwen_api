@@ -21,30 +21,7 @@ git clone https://github.com/HarukiFT/qwen_api.git
 cd qwen_api
 ```
 
-### 2. Create `credentials.json` file in project dir
-
-**File with accounts credentials should be named as credentials.json and placed in project dir**  
-**IT'S MUST HAVE**
-Example of `credentials.json` content:
-
-```json
-[
-  {
-    "login": "carolann90113@bfr4.terriblecoffee.org",
-    "password": "zd05455f9fb947a47d37c7853a511364486992625bad99x85fa4554b2472f81e"
-  },
-  {
-    "login": "proffitt21121@g696.undeadbank.com",
-    "password": "1d05455f9fb947a47d37c7853a511364486992625bad99z85fa4554b2472f81e"
-  },
-  {
-    "login": "aaronson36532@zrhwl.underseagolf.com",
-    "password": "7d05455f9fb947a47d37c7853a511364486992625bad99a85fa4554b2472f81e"
-  }
-]
-```
-
-### 3. Build and Run the Application
+### 2. Build and Run the Application
 
 **Using Docker**
 To build and run the application using Docker, follow these steps:
@@ -55,16 +32,23 @@ To build and run the application using Docker, follow these steps:
 docker build -t qwen-api .
 ```
 
-##### 2. Run the Docker Container:
+#### 2. Create volume:
 
 ```bash
-docker run -p 3000:3000 qwen-api
+docker volume create qwen_volume
+```
+
+##### 3. Run the Docker Container:
+
+```bash
+docker run -p 3000:3000 --name qwen_container -v qwen_volume:/app/data qwen-api
 ```
 
 This command maps port `3000` of the container to port `3000` on your host machine.
 
 **Using Docker Compose**
 If you prefer using Docker Compose, create a `docker-compose.yml` file in the root directory:
+_(example content in progress)_
 
 ```yaml
 version: '3.8'
@@ -82,6 +66,23 @@ docker-compose up --build
 ```
 
 ## API Documentation
+
+## POST `/credentials/generate`
+
+This endpoint processes generation of credentials that it needs to comfortable work. More credentials, more requests per moment
+
+## GET `/credentials`
+
+Returns all generated credentials with signature:
+
+```json
+[
+  {
+    "login": "ExampleLogin",
+    "password": "SHA256Hash"
+  }
+]
+```
 
 ## POST `/prompt/completions`
 

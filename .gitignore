@@ -50,6 +50,7 @@ credentials.json
 
 # Runtime data
 pids
+data
 *.pid
 *.seed
 *.pid.lock

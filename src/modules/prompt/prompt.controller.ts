@@ -50,7 +50,6 @@ export class PromptController {
       from(stream)
         .pipe(
           map((chunk) => {
-            console.log(JSON.stringify(chunk));
             return JSON.stringify(chunk);
           }),
           finalize(() => {

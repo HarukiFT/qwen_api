@@ -43,6 +43,8 @@ coverage
 **\.env.production.local
 **\.env.local
 
+data
+
 # temp directory
 **\.temp
 **\.tmp

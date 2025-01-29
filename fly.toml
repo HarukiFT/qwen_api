@@ -15,3 +15,7 @@ primary_region = 'arn'
   memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1
+
+[mounts]
+source = "qwen_data"
+destination = "/app/data"

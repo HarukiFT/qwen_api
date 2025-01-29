@@ -69,7 +69,9 @@ docker-compose up --build
 
 ## POST `/credentials/generate`
 
-This endpoint processes generation of credentials that it needs to comfortable work. More credentials, more requests per moment
+**`SHOULD BE CALLED AT LEAST ONCE`**
+This endpoint processes generation of credentials that it needs to comfortable work.  
+**More credentials, more possible requests per moment**
 
 ## GET `/credentials`
 

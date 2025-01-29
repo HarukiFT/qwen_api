@@ -17,8 +17,8 @@ Before you begin, ensure you have the following installed on your system:
 Clone the project repository to your local machine:
 
 ```bash
-git clone https://github.com/your-repo-url.git
-cd your-repo-name
+git clone https://github.com/HarukiFT/qwen_api.git
+cd qwen_api
 ```
 
 ### 2. Create `credentials.json` file in project dir
